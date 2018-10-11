@@ -1,11 +1,9 @@
 //Jean Lucas, Otacilio Henrique,Marcus Vinivius
 
-
-const
-     T = 2,
-     MAX_CHAVES = 2 * T - 1,
-     MAX_FILHOS = 2 * T,
-     MIN_OCUP = T - 1;
+#define T = 2
+#define MAX_CHAVES  2 * T - 1
+#define MAX_FILHOS  2 * T
+#define MIN_OCUP  T - 1
 
 typedef struct no_arvoreB {
    int num_chaves;
