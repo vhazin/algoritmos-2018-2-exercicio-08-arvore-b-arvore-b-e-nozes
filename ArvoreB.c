@@ -38,6 +38,8 @@ arvoreB *insere(arvoreB *raiz, int info, bool *h, int *info_retorno)
   arvoreB *temp, *filho_dir;
 
   if (raiz == NULL)
+     
+     
    {
      *h = true;
      *info_retorno = info;
@@ -116,4 +118,23 @@ arvoreB *insereArvoreB(arvoreB *raiz, int info)
      return(nova_raiz);
    }
   else return(raiz);
+}
+
+int busca_binaria(arvoreB *no, int info) 
+{ 
+  int meio, i, f; 
+
+  i = 0;
+  f = no->num_chaves-1;
+
+  while (i <= f)
+  {
+    meio = (i + f)/2;
+    if (no->chaves[meio] == info)
+       return(meio);
+    else if (no->chave[meio] > info
+            f = meio - 1;
+         else i = meio + 1;
+  }
+  return(i); 
 }
