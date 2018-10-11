@@ -1,6 +1,6 @@
 //Jean Lucas, Otacilio Henrique,Marcus Vinivius
 
-#define T = 2
+#define T 2
 #define MAX_CHAVES  2 * T - 1
 #define MAX_FILHOS  2 * T
 #define MIN_OCUP  T - 1
@@ -97,7 +97,7 @@ arvoreB *insere(arvoreB *raiz, int info, bool *h, int *info_retorno)
      }
 }
 
-arvoreB *insere_arvoreB(arvoreB *raiz, int info)
+arvoreB *insereArvoreB(arvoreB *raiz, int info)
 {
   bool h;
   int info_retorno, i;
